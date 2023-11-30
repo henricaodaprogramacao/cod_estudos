@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:wght@600&family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #141723;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body > main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body > main > section {
+    background-color: #000000;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;    
+    padding: 15px;
+    gap: 20px;
+    box-shadow: 0px -1px 19px 1px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 0px -1px 19px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px -1px 19px 1px rgba(0,0,0,0.41);
+    max-width: 275px;
+}
+
+.display-flex, .conteiner-btn > div {
+    display: flex;
+}
+
+section > .conteiner-num, section > .conteiner-btn {
+    background-color: #000000;
+}
+
+section > .conteiner-num{
+    justify-content: end;
+    margin: 0 10px; 
+    font-size: 55px;
+    overflow-x: hidden;
+}
+
+section > .conteiner-btn {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.conteiner-btn > div {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.conteiner-btn > div:first-child > div:first-child, .conteiner-btn > div:last-child > div:first-child{
+    width: 33.3%;
+    border-radius: 33px;
+}
+
+.conteiner-btn > div:first-child > div{
+    background-color: #7a7979;
+}
+
+.conteiner-btn > div:first-child > div:hover{
+    background-color: #646363;
+}
+
+.conteiner-btn > div > div:last-child{
+    background-color: orange;
+}
+
+.conteiner-btn > div > div:last-child:hover{
+    background-color: #9b6400;
+}
+
+.estilo-btn {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #161616;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.estilo-btn:hover {
+    background-color: #0f0f0f;
+}
+
+.conteiner-btn > div:first-child > div, .conteiner-btn > div:first-child > div:hover, .conteiner-btn > div > div:last-child, .conteiner-btn > div > div:last-child:hover, .estilo-btn, .estilo-btn:hover{
+    transition: 0.2s;
+}
+
